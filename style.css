@@ -11,6 +11,29 @@ body {
   overflow: hidden;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  color: white;
+  margin: 0 0 6rem 0;
+  text-align: center;
+  font-size: 3rem;
+}
+.header span {
+  display: inline-block;
+  transition: transform 0.2s ease-out;
+}
+
+.header span:hover {
+  transform: scale(1.5);
+  color: rgb(255, 131, 30);
+  cursor: pointer;
+}
+
+.beat-container {
+  display: flex;
   justify-content: center;
   align-items: center;
 }

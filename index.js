@@ -1,3 +1,11 @@
+const header = document.querySelectorAll(".header");
+header.forEach((header) => {
+  header.innerHTML = header.textContent
+    .split("")
+    .map((letter) => (letter === " " ? " " : `<span>${letter}</span>`))
+    .join("");
+});
+
 function playSound(e) {
   console.log("key Pressed: ", e.keyCode);
 
